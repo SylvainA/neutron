@@ -81,7 +81,6 @@ class L2population(extensions.ExtensionDescriptor):
     @classmethod
     def get_resources(cls):
         """Returns Ext Resources."""
-
         my_plurals = [(key, key[:-3] + 'i')
                       for key in RESOURCE_ATTRIBUTE_MAP.keys()]
         attr.PLURALS.update(dict(my_plurals))
