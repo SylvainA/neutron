@@ -28,6 +28,7 @@ DHCP = 'q-dhcp-notifer'
 
 L3_AGENT = 'l3_agent'
 DHCP_AGENT = 'dhcp_agent'
+L2POPULATION_AGENT = 'l2population_agent'
 
 
 def get_topic_name(prefix, table, operation):

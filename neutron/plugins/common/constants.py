@@ -19,20 +19,23 @@
 CORE = "CORE"
 DUMMY = "DUMMY"
 LOADBALANCER = "LOADBALANCER"
+L2POPULATION = "l2population"
 
 #maps extension alias to service type
 EXT_TO_SERVICE_MAPPING = {
     'dummy': DUMMY,
-    'lbaas': LOADBALANCER
+    'lbaas': LOADBALANCER,
+    'l2population': L2POPULATION
 }
 
 # TODO(salvatore-orlando): Move these (or derive them) from conf file
-ALLOWED_SERVICES = [CORE, DUMMY, LOADBALANCER]
+ALLOWED_SERVICES = [CORE, DUMMY, LOADBALANCER, L2POPULATION]
 
 COMMON_PREFIXES = {
     CORE: "",
     DUMMY: "/dummy_svc",
     LOADBALANCER: "/lb",
+    L2POPULATION: "/l2population"
 }
 
 # Service operation status constants
